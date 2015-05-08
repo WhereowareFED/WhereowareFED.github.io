@@ -1,6 +1,6 @@
 defaults:
   -
     scope:
-	  path: ""
-	values:
-	  layout: "default"
+      path: ""
+    values:
+      layout: "default"
