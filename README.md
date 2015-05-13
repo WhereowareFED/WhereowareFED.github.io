@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/WhereowareFED/WhereowareFED.github.io.svg?branch=master "Build Status")](https://travis-ci.org/WhereowareFED/WhereowareFED.github.io)
-
-# Whereoware Front-End Development Documentation
+# Whereoware Front-End Development Documentation [![Build Status](https://travis-ci.org/WhereowareFED/WhereowareFED.github.io.svg?branch=master "Build Status")](https://travis-ci.org/WhereowareFED/WhereowareFED.github.io)
 This repository contains the documentation for front end development at Whereoware on the EPiServer platform. Before contributing, please read the note on [Jekyll's issues with UTF-8 byte order marks (BOMs)](#utf-8-byte-order-marks).
 
 ## Troubleshooting build errors: Most common issues
