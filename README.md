@@ -1,10 +1,11 @@
-# Whereoware Front-End Development Documentation [![Build Status](https://travis-ci.org/WhereowareFED/WhereowareFED.github.io.svg?branch=master "Build Status")](https://travis-ci.org/WhereowareFED/WhereowareFED.github.io)
+﻿# Whereoware Front-End Development Documentation [![Build Status](https://travis-ci.org/WhereowareFED/WhereowareFED.github.io.svg?branch=master "Build Status")](https://travis-ci.org/WhereowareFED/WhereowareFED.github.io)
 This repository contains the documentation for front end development at Whereoware on the EPiServer platform. Before contributing, please read the note on [Jekyll's issues with UTF-8 byte order marks (BOMs)](#utf-8-byte-order-marks).
 
 ## Troubleshooting build errors: Most common issues
 If the pages are not displaying correctly (not taking the markup, missing templates, etc.) or you can't get the repository to build, check the [build logs on Travis CI](https://travis-ci.org/WhereowareFED/WhereowareFED.github.io). Below are some of the issues you'll probably run into first.
 
  - [UTF-8 byte order marks](#utf-8-byte-order-marks)
+ - [Pages with no YAML front matter](#pages-with-no-yaml-front-matter)
  - [Tabs vs. spaces in YAML front matter](#tabs-vs-spaces-in-yaml-front-matter)
 
 ### UTF-8 byte order marks
@@ -18,8 +19,11 @@ Visual Studio will, by default, automatically encode any files that it touches w
  3. In the **Encoding** field, you'll see that "Unicode (UTF-8 with signature) - Codepoint 65001" is currently selected. You'll have to scroll down to find the option we want: **Unicode (UTF-8 _without_ signature) - Codepage 65001**.
  4. Click **OK**, make some change to the file that would allow you to save it, and then save it.
 
+### Pages with no YAML front matter
+If you don't need to put anything in the [**YAML front matter**](http://jekyllrb.com/docs/frontmatter/) for a page, it still needs to be present; otherwise Jekyll won't process the rest of the page. Just leave the pair of triple-dashed lines at the top of the file, with nothing in between them.
+
 ### Tabs vs. spaces in YAML front matter
-Some editors will automatically prefer tab characters for indentation rather than individual spaces. However, when writing pages in Jekyll, the [**YAML front matter**](http://jekyllrb.com/docs/frontmatter/) (which all pages in Jekyll must include, even if the front matter empty) must use **two space characters** for each level of indentation, not tabs. If tabs are used, the front matter won't be processed and the page won't be rendered properly.
+Some editors will automatically prefer tab characters for indentation rather than individual spaces. However, when writing pages in Jekyll, the front matter must use **two space characters** for each level of indentation, not tabs. If tabs are used, the front matter won't be processed and the page won't be rendered properly.
 
 The best way to counteract this is honestly just to double-check before saving, even if you copied and pasted the front matter from somewhere else.
 
